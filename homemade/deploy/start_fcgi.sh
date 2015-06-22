@@ -13,7 +13,7 @@ ROOT_DIR="/var/www/$domain"
 pid=`ps -eo pid,args|grep "python $ROOT_DIR/manage.py runfcgi"|grep -v grep|cut -c1-6|head -1`
 if [ -z $pid ]
 then
-    python $ROOT_DIR/manage.py runfcgi method=prefork host=0.0.0.0 port=$port
+    sudo python $ROOT_DIR/manage.py runfcgi method=prefork host=0.0.0.0 port=$port
     pid=`ps -eo pid,args|grep "python $ROOT_DIR/manage.py runfcgi" |grep -v grep|cut -c1-6|head -1`
     echo "Started,pid=$pid."
 else
