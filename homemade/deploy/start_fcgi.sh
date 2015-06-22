@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/garadmin/bin
-. /root/workspace/homemade_env/bin/activate
+. /home/luchen/homemade-env/bin/activate
 domain=$1
 port=8099
 if [ -z $domain ]
