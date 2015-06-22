@@ -19,6 +19,6 @@ fi
 mkdir $ROOT_DIR
 cp -r ../ $ROOT_DIR/
 
-echo "DEVELOPMENT=False" >> $ROOT_DIR/homemade/settings.py
-echo "DEBUG=False" >> $ROOT_DIR/homemade/settings.py
+#echo "DEVELOPMENT=False" >> $ROOT_DIR/homemade/settings.py
+#echo "DEBUG=False" >> $ROOT_DIR/homemade/settings.py
 
